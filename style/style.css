@@ -40,6 +40,7 @@ h2 {
     position: sticky;
     top: 0;
     text-shadow: #141122 3px 3px 3px;
+    z-index: 100;
 }
 
 .introduction {
@@ -87,6 +88,34 @@ h2 {
     line-height: 1.5em;
 }
 
+/* animation */
+.animate {
+    opacity: 0;
+}
+
+@keyframes anim1 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes anim2 {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 /* ROAD */
 
