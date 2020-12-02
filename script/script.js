@@ -1,15 +1,11 @@
 let car = document.querySelector('.car');
 let section = document.querySelector('main')
-
 let allAnimationItems = document.querySelectorAll('.animate')
-
-
-
 let sectionHeight = section.offsetHeight;
 let windowHeight = window.innerHeight;
 let sectionInnerHeight = sectionHeight - windowHeight;
 
-
+let allSections = document.querySelectorAll('main > section')
 
 window.addEventListener("scroll", (e) => {
     let scroll = this.scrollY;
@@ -21,13 +17,10 @@ window.addEventListener("scroll", (e) => {
 });
 
 // OBSERVER
-
 const options = {
     threshold: 1
 }
 const observer = new IntersectionObserver((entries) => {
-    console.log(entries)
-
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             entry.target.style.animation = `${entry.target.dataset.animation} .8s forwards ease-in-out`
@@ -36,10 +29,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.style.animation = 'none'
         }
     })
-
-
 }, options)
-
 allAnimationItems.forEach(item => {
     observer.observe(item)
 })
