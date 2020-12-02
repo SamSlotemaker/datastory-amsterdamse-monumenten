@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    min-height: 200vh;
+    padding: 4em;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+}
+
+h1 span {
+    display: block;
+    font-size: 1.7em;
+    color: rgb(125, 113, 238);
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    text-align: right;
+    color: white;
+    font-size: 3em;
+    position: sticky;
+    top: 0;
+}
+
+.introduction {
+    display: grid;
+    min-height: 100vh;
+    background: linear-gradient(#141122, #231c42, #67088d);
+    place-items: center;
+}
+
+/* MONUMENTEN */
+.homo-monument {
+    background: linear-gradient(#67088d, #002D08);
+}
+
+.oorlog-monument {
+    background: linear-gradient(#002D08, #766548);
+}
+
+.slavernij-monument {
+    background: linear-gradient(#766548, #fff);
+}
+
+.datavis {
+    display: block;
+    margin: 4em auto;
+}
+
+.monument-informatie {
+    color: white;
+}
+
+.monument-informatie h3 {
+    font-size: 2em;
+}
+
+/* ROAD */
+
+.road-container {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    height: 75px;
+    background-image: url('images/ezgif.com-gif-maker.jpg');
+    background-repeat: repeat-x;
+}
+
+
+.car {
+    background-image: url('images/2136d8d0e80aad580f170736f5e469ee.png');
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: var(--car-left);
+    bottom: 25px;
+    z-index: 100;
+    width: 100px;
+    height: 50px;
+
+}
+
+.years {
+    list-style-type: none;
+}
+
+.years li {
+    position: absolute;
+    bottom: 80px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+
+}
+
+.years li:nth-of-type(1) {
+    right: 0;
+}
+
+.years li:nth-of-type(2) {
+    right: 33%;
+}
+
+.years li:nth-of-type(3) {
+    right: 66%;
+}
