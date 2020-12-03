@@ -23,13 +23,17 @@ section {
 h1 {
     color: white;
     font-size: 3em;
+    animation: anim3 2s ease-in;
 }
 
 h1 span {
     display: block;
     font-size: 1.7em;
     color: rgb(125, 113, 238);
+    transform: rotate(10deg);
     text-align: center;
+    opacity: 0;
+    animation: anim2 1s linear forwards .3s;
 }
 
 h2 {
@@ -49,6 +53,26 @@ h2 {
     background: linear-gradient(#141122, #231c42, #67088d);
     place-items: center;
     padding: 0;
+}
+
+.information {
+    min-height: 100vh;
+    color: white;
+    background: #67088d;
+}
+
+.information div {
+    max-width: 800px;
+    margin: auto;
+}
+
+.information h2 {
+    position: static;
+    text-align: left;
+}
+
+.information p {
+    line-height: 1.5em;
 }
 
 /* MONUMENTEN */
@@ -117,6 +141,16 @@ h2 {
     }
 }
 
+@keyframes anim3 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* ROAD */
 
 .road-container {
@@ -132,15 +166,16 @@ h2 {
 }
 
 :root {
-    --car-left: 100%;
+    --car-left: 0;
 }
 
 .car {
-    background-image: url('images/2136d8d0e80aad580f170736f5e469ee.png');
+    background-image: url('images/car-new.png');
     position: absolute;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     left: var(--car-left);
+    transform: scaleX(-1);
     bottom: 25px;
     z-index: 1000;
     width: 100px;
@@ -162,15 +197,15 @@ h2 {
 }
 
 .years li:nth-of-type(1) {
-    right: 5%;
+    left: 5%;
 }
 
 .years li:nth-of-type(2) {
-    right: 33%;
+    left: 45%;
 }
 
 .years li:nth-of-type(3) {
-    right: 66%;
+    left: 80%;
 }
 
 @media screen and (max-width: 800px) {
