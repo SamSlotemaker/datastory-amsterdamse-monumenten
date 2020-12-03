@@ -13,6 +13,7 @@ html {
 ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 section {
@@ -61,6 +62,20 @@ h2 {
     background: #67088d;
 }
 
+.information ul li {
+    margin-top: 1em;
+}
+
+.information ul li::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    width: 10px;
+    height: 3px;
+    transform: translateY(-5px);
+    background: white;
+}
+
 .information div {
     max-width: 800px;
     margin: auto;
@@ -76,9 +91,91 @@ h2 {
 }
 
 /* MONUMENTEN */
+
+/* HOMO MONUMENT */
 .homo-monument {
     background: linear-gradient(#67088d, #002D08);
 }
+
+.homo-illustratie {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    margin: 2em auto;
+}
+
+:root {
+    --car-width: 180px
+}
+
+.homo-illustratie img {
+    z-index: 1000;
+    max-width: var(--car-width);
+    position: absolute;
+}
+
+
+
+.homo-illustratie img:nth-of-type(1):hover+div {
+    opacity: 1;
+}
+
+.homo-illustratie img:nth-of-type(2):hover+div {
+    opacity: 1;
+}
+
+.homo-illustratie img:nth-of-type(3):hover+.info-block {
+    opacity: 1;
+}
+
+.homo-illustratie img:nth-of-type(1) {
+    top: 0;
+    left: 20%;
+
+}
+
+.homo-illustratie img:nth-of-type(2) {
+    top: 0;
+    right: 20%;
+}
+
+.homo-illustratie img:nth-of-type(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-block {
+    position: absolute;
+    transform: translate(-50%, 50%);
+
+    opacity: 0;
+}
+
+.info-block p {
+    max-width: 400px;
+}
+
+/* 
+.info-block:nth-of-type(1) {
+    top: 0;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.info-block:nth-of-type(2) {
+    bottom: 0;
+    left: 20%;
+    transform: translateX(var(--car-width));
+}
+
+.info-block:nth-of-type(3) {
+    bottom: 0;
+    right: 20%;
+    transform: translateX(- var(--car-width));
+} */
+
+
 
 .oorlog-monument {
     background: linear-gradient(#002D08, #766548);
