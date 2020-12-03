@@ -14,11 +14,11 @@ window.addEventListener("scroll", (e) => {
     percentage = parseInt(percentage)
     let toLeft = percentage
 
-    if (percentage > 40) {
+    if (percentage > 60) {
         car.style.backgroundImage = "url('./style/images/car-old.png')"
         car.style.bottom = "25px"
     }
-    else if (percentage > 20) {
+    else if (percentage > 32) {
         car.style.backgroundImage = "url('./style/images/car-older.png')"
         car.style.bottom = "15px"
     }

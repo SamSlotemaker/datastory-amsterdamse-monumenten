@@ -48,12 +48,47 @@ h2 {
     z-index: 100;
 }
 
-.introduction {
+.landing {
     display: grid;
     min-height: 100vh;
     background: linear-gradient(#141122, #231c42, #67088d);
     place-items: center;
     padding: 0;
+}
+
+.introduction {
+    background: #67088d;
+    color: white;
+    min-height: 100vh;
+}
+
+.introduction div {
+    max-width: 800px;
+    margin: auto;
+}
+
+.introduction h2 {
+    position: static;
+    text-align: left;
+    font-size: 2.3em;
+}
+
+.introduction p {
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+.introduction p span {
+    display: block;
+    letter-spacing: 0.07em;
+    font-weight: bold;
+}
+
+.introduction img {
+    width: 10em;
+    display: block;
+    margin: auto;
+    filter: invert(1);
 }
 
 .information {
@@ -101,7 +136,8 @@ h2 {
     position: relative;
     width: 50vw;
     height: 50vh;
-    margin: 2em auto;
+    margin: 10em auto;
+
 }
 
 :root {
@@ -147,8 +183,8 @@ h2 {
 
 .info-block {
     position: absolute;
-    transform: translate(-50%, 50%);
-
+    top: 20%;
+    transform: translate(-50%, 0);
     opacity: 0;
 }
 
@@ -263,7 +299,7 @@ h2 {
 }
 
 :root {
-    --car-left: 0;
+    --car-left: -100%;
 }
 
 .car {
@@ -277,7 +313,6 @@ h2 {
     z-index: 1000;
     width: 100px;
     height: 50px;
-    box-shadow: 14px 24px 44px -17px rgba(0, 0, 0, 0.75);
 }
 
 .years {
@@ -306,7 +341,7 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-    .introduction h1 {
+    .landing h1 {
         font-size: 1.8em
     }
 }
@@ -320,7 +355,7 @@ h2 {
         font-size: 1.8em;
     }
 
-    .introduction h1 {
+    .landing h1 {
         font-size: 1.3em;
         margin: 0 auto;
     }
