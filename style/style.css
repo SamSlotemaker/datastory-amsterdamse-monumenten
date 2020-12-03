@@ -302,6 +302,8 @@ h3 {
 
 .info-block2:nth-of-type(2) {
     top: 30%;
+    right: 0;
+    transform: translateX(120%);
 }
 
 .info-block2:nth-of-type(3) {
