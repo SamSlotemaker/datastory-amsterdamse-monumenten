@@ -23,7 +23,6 @@ ul {
 }
 
 section {
-    min-height: 200vh;
     padding: 4em;
 }
 
@@ -131,7 +130,7 @@ h3 {
 .information {
     min-height: 100vh;
     color: white;
-    background: #000;
+    background: #0C3444;
 }
 
 .information ul li {
@@ -168,6 +167,7 @@ h3 {
 .pie-charts {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 7em;
 }
 
 .pie-charts>div>div {
@@ -287,7 +287,7 @@ body main .pie-charts h3 {
 
 .oorlog-illustratie {
     display: block;
-    height: 100vh;
+    height: 60vh;
     margin: 7em auto;
 }
 
