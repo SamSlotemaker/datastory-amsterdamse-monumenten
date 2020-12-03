@@ -47,10 +47,10 @@ h1 span {
 h2 {
     font-family: 'ddchardware', 'sans-serif';
     margin: 0;
-    text-align: right;
+    text-align: left;
     color: white;
     font-size: 3em;
-    position: sticky;
+    position: static;
     top: 0;
     text-shadow: #141122 3px 3px 3px;
     z-index: 100;
@@ -60,16 +60,25 @@ h3 {
     font-family: 'ddchardware', 'sans-serif';
 }
 
+.flex-titel {
+    /* margin: 0em 3em; */
+    padding: 0em 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    /* grid-gap: ; */
+}
+
 .landing {
     display: grid;
     min-height: 100vh;
-    background: linear-gradient(#141122, #231c42, #67088d);
+    background: #0C3444;
     place-items: center;
     padding: 0;
 }
 
 .introduction {
-    background: #67088d;
+    background: #0C3444;
     color: white;
     min-height: 100vh;
 }
@@ -90,31 +99,34 @@ h3 {
     font-size: 1.3em;
 }
 
+.introduction>h2 {
+    margin: 7em auto 0em auto;
+    max-width: 800px;
+}
+
+.introduction>section {
+    min-height: auto
+}
+
+.introduction>section:first-of-type>h3 {
+    text-align: right;
+}
+
+.introduction>section:last-of-type>h3 {
+    position: relative;
+}
+
+.introduction>section:last-of-type img {
+    margin-top: -4em;
+}
+
+
 
 .introduction img {
-    width: 10em;
-    display: block;
     margin: auto;
-    margin-top: 10em;
-    filter: invert(1);
-    animation: jump 2s infinite ease-in-out;
+    display: block;
+    width: 80vw;
 }
-
-@keyframes jump {
-    0% {
-        transform: translateY(0%);
-    }
-
-    50% {
-        transform: translateY(-20%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-
 
 .information {
     min-height: 100vh;
@@ -152,6 +164,40 @@ h3 {
 
 /* MONUMENTEN */
 
+/* PIE CHARTS */
+.pie-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pie-charts>div>div {
+    position: relative;
+}
+
+body main .pie-charts h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.pie-charts img {
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+
+.pie-charts p:first-of-type {
+    color: white;
+    position: absolute;
+    color: white;
+    font-size: 1.3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+}
+
 /* HOMO MONUMENT */
 .illustratie {
     margin: 7em auto;
@@ -162,7 +208,7 @@ h3 {
 }
 
 .homo-monument {
-    background: linear-gradient(#67088d, #002D08);
+    background: #9DC9B2;
     color: white;
 }
 
@@ -186,6 +232,7 @@ h3 {
     max-width: var(--car-width);
     position: absolute;
     cursor: pointer;
+
 }
 
 .homo-illustratie>img:hover {
@@ -196,17 +243,6 @@ h3 {
     transform: translateX(-50%) scale(1.2);
 }
 
-/* .homo-illustratie img:nth-of-type(1):hover+div {
-    opacity: 1;
-}
-
-.homo-illustratie img:nth-of-type(2):hover+div {
-    opacity: 1;
-}
-
-.homo-illustratie img:nth-of-type(3):hover+div {
-    opacity: 1;
-} */
 .homo-illustratie img:hover+div {
     opacity: 1;
 }
@@ -246,7 +282,7 @@ h3 {
 }
 
 .oorlog-monument {
-    background: linear-gradient(#002D08, #002D08, #766548);
+    background: #EBC557;
 }
 
 .oorlog-illustratie {
@@ -256,10 +292,11 @@ h3 {
 }
 
 .slavernij-monument {
-    background: linear-gradient(#766548, #000);
+    background: #473D2B;
 }
 
 .slavernij-illustratie {
+    color: white;
     height: 50vh;
     width: 40vw;
     /* height: 70vh; */
@@ -296,6 +333,10 @@ h3 {
     position: absolute;
     top: 30%;
     transform: translateX(-120%);
+}
+
+.info-block2 h4 {
+    margin: 0;
 }
 
 .info-block2:nth-of-type(1) {
