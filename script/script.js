@@ -12,7 +12,8 @@ window.addEventListener("scroll", (e) => {
     let scroll = this.scrollY - main.offsetTop;
     let percentage = scroll / mainInnerHeight * 100;
     percentage = parseInt(percentage)
-    let toLeft = percentage
+    console.log(percentage)
+    let toLeft = percentage - 10
 
     if (percentage > 60) {
         car.style.backgroundImage = "url('./style/images/car-old.png')"

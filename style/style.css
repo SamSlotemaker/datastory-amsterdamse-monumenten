@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
 
+@font-face {
+    font-family: 'ddchardware';
+    src: url('./font/DDCHardware-Regular.otf') format('opentype')
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +12,8 @@
 body,
 html {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'ddchardware', sans-serif;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -94,7 +100,7 @@ h2 {
 .information {
     min-height: 100vh;
     color: white;
-    background: #67088d;
+    background: #000;
 }
 
 .information ul li {
@@ -128,31 +134,49 @@ h2 {
 /* MONUMENTEN */
 
 /* HOMO MONUMENT */
+.illustratie {
+    margin: 7em auto;
+}
+
+.info-heading {
+    font-size: 2em;
+}
+
 .homo-monument {
     background: linear-gradient(#67088d, #002D08);
+    color: white;
+}
+
+.homo-monument h3 {
+    max-width: 800px;
+    margin: auto;
 }
 
 .homo-illustratie {
     position: relative;
-    width: 50vw;
-    height: 50vh;
-    margin: 10em auto;
-
+    width: 1000px;
+    height: 600px;
 }
 
 :root {
-    --car-width: 180px
+    --car-width: 280px
 }
 
 .homo-illustratie img {
-    z-index: 1000;
+    z-index: 10;
     max-width: var(--car-width);
     position: absolute;
 }
 
+.homo-illustratie>img:hover {
+    transform: scale(1.2);
+}
 
+.homo-illustratie img:nth-of-type(3):hover {
+    transform: translateX(-50%) scale(1.2);
+}
 
-.homo-illustratie img:nth-of-type(1):hover+div {
+/* .homo-illustratie img:nth-of-type(1):hover+div {
     opacity: 1;
 }
 
@@ -160,19 +184,22 @@ h2 {
     opacity: 1;
 }
 
-.homo-illustratie img:nth-of-type(3):hover+.info-block {
+.homo-illustratie img:nth-of-type(3):hover+div {
+    opacity: 1;
+} */
+.homo-illustratie img:hover+div {
     opacity: 1;
 }
 
 .homo-illustratie img:nth-of-type(1) {
     top: 0;
-    left: 20%;
+    left: 15%;
 
 }
 
 .homo-illustratie img:nth-of-type(2) {
     top: 0;
-    right: 20%;
+    right: 15%;
 }
 
 .homo-illustratie img:nth-of-type(3) {
@@ -183,42 +210,39 @@ h2 {
 
 .info-block {
     position: absolute;
-    top: 20%;
+    top: 30%;
     transform: translate(-50%, 0);
+    font-size: 1.4em;
     opacity: 0;
 }
 
-.info-block p {
-    max-width: 400px;
-}
-
-/* 
-.info-block:nth-of-type(1) {
-    top: 0;
-    left: 70%;
-    transform: translateX(-50%);
-}
-
 .info-block:nth-of-type(2) {
-    bottom: 0;
-    left: 20%;
-    transform: translateX(var(--car-width));
+    right: 0;
+    transform: translateX(50%);
 }
 
-.info-block:nth-of-type(3) {
-    bottom: 0;
-    right: 20%;
-    transform: translateX(- var(--car-width));
-} */
-
-
+.info-block p {
+    max-width: 300px;
+}
 
 .oorlog-monument {
-    background: linear-gradient(#002D08, #766548);
+    background: linear-gradient(#002D08, #002D08, #766548);
+}
+
+.oorlog-illustratie {
+    display: block;
+    height: 100vh;
+    margin: 7em auto;
 }
 
 .slavernij-monument {
-    background: linear-gradient(#766548, #fff);
+    background: linear-gradient(#766548, #000);
+}
+
+.slavernij-illustratie {
+    width: 100%;
+    /* height: 70vh; */
+    margin: 7em auto
 }
 
 .datavis {
@@ -235,8 +259,8 @@ h2 {
 
 }
 
-.monument-informatie h3 {
-    font-size: 2em;
+.homo-monument h3 {
+    /* font-size: 2em; */
 
 }
 
