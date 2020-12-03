@@ -39,7 +39,6 @@ h1 span {
     display: block;
     font-size: 1.7em;
     color: rgb(125, 113, 238);
-    transform: rotate(10deg);
     text-align: center;
     opacity: 0;
     animation: anim2 1s linear forwards .3s;
@@ -91,11 +90,6 @@ h3 {
     font-size: 1.3em;
 }
 
-.introduction p span {
-    display: block;
-    letter-spacing: 0.07em;
-    font-weight: bold;
-}
 
 .introduction img {
     width: 10em;
