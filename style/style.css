@@ -399,7 +399,7 @@ body main .pie-charts h3 {
 
 @keyframes anim1 {
     from {
-        transform: translateY(-100px);
+        transform: translateX(-100px);
         opacity: 0;
     }
 
@@ -411,7 +411,7 @@ body main .pie-charts h3 {
 
 @keyframes anim2 {
     from {
-        transform: translateX(-100px);
+        transform: translateX(100px);
         opacity: 0;
     }
 
