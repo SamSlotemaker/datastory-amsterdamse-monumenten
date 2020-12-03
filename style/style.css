@@ -259,7 +259,8 @@ h3 {
 }
 
 .slavernij-illustratie {
-    height: 70vh;
+    height: 50vh;
+    width: 40vw;
     /* height: 70vh; */
     margin: 7em auto;
     position: relative;
