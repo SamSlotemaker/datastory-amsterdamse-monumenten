@@ -95,8 +95,26 @@ h3 {
     width: 10em;
     display: block;
     margin: auto;
+    margin-top: 10em;
     filter: invert(1);
+    animation: jump 2s infinite ease-in-out;
 }
+
+@keyframes jump {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
 
 .information {
     min-height: 100vh;
