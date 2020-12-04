@@ -65,7 +65,10 @@ h3 {
     place-items: center;
     align-items: center;
     height: 100vh;
+}
 
+.flex-titel span {
+    display: block;
 }
 
 .landing {
@@ -170,15 +173,16 @@ h3 {
 
 /* PIE CHARTS */
 .pie-charts {
+    margin: auto;
     margin-bottom: 20vh;
+    width: 90vw;
+    max-width: 1200px;
 }
 
 .pie-charts h2 {
     margin: auto;
     font-size: 2em;
-
     margin: 40vh auto 2em auto;
-
 }
 
 .pie-charts div {
