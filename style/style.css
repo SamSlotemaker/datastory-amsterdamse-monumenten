@@ -212,9 +212,12 @@ body main .pie-charts h3 {
 
 }
 
-.oorlog-monument .pie-charts h3,
-.oorlog-monument .pie-charts p {
+.homo-monument .pie-charts h3 {
     color: #052934;
+}
+
+.oorlog-monument .pie-charts h3 {
+    color: #91BEA2;
 }
 
 .slavernij-monument .pie-charts h3 {
