@@ -140,6 +140,7 @@ h3 {
     min-height: 100vh;
     color: white;
     background: #0C3444;
+    padding-bottom: 10em;
 }
 
 .information ul li {
@@ -344,6 +345,22 @@ body main .pie-charts h3 {
     right: 0;
 }
 
+.oorlog-illustratie .vrouw:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.oorlog-illustratie .hangendeMannen:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.oorlog-illustratie .manLinks:hover {
+    transform: scale(1.2);
+}
+
+.oorlog-illustratie .manRechts:hover {
+    transform: scale(1.2);
+}
+
 .oorlog-illustratie .pilaar {
     height: 100%;
     position: absolute;
@@ -357,6 +374,7 @@ body main .pie-charts h3 {
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .oorlog-illustratie .hangendeMannen {
@@ -364,22 +382,26 @@ body main .pie-charts h3 {
     top: 280px;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .oorlog-illustratie .manLinks {
     position: absolute;
     top: 320px;
     left: 170px;
+    cursor: pointer;
 }
 
 .oorlog-illustratie .manRechts {
     position: absolute;
     top: 320px;
     right: 165px;
+    cursor: pointer;
 }
 
 .oorlog-illustratie img:hover+div {
     opacity: 1;
+
 }
 
 .info-block3 {
@@ -434,6 +456,14 @@ body main .pie-charts h3 {
 
 .slavernij-illustratie img:nth-of-type(3) {
     right: 0;
+}
+
+.slavernij-illustratie img:hover {
+    transform: scale(1.1);
+}
+
+.slavernij-illustratie img:nth-of-type(2):hover {
+    transform: translateX(-50%) scale(1.1);
 }
 
 .slavernij-illustratie img:hover+div {
