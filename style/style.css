@@ -105,19 +105,8 @@ h3 {
 }
 
 .introduction>section {
-    min-height: auto
-}
-
-.introduction>section:first-of-type>h3 {
-    text-align: right;
-}
-
-.introduction>section:last-of-type>h3 {
-    position: relative;
-}
-
-.introduction>section:last-of-type img {
-    margin-top: -4em;
+    min-height: auto;
+    padding: 0em
 }
 
 
@@ -126,10 +115,19 @@ h3 {
     margin: auto;
 }
 
+.introduction>section p {
+    margin: 3em;
+    text-align: center;
+}
+
 .introduction img {
     margin: auto;
     display: block;
     width: 100%;
+}
+
+.introduction section:last-of-type img {
+    margin-bottom: 40vh;
 }
 
 .information {
