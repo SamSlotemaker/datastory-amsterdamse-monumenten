@@ -65,6 +65,9 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    height: 100vh;
+    border-bottom: 1px solid white;
+
     /* grid-gap: ; */
 }
 
@@ -380,12 +383,7 @@ body main .pie-charts h3 {
     transform: translateY(-5px);
     background: white;
 }
-}
 
-.homo-monument h3 {
-    /* font-size: 2em; */
-
-}
 
 .monument-informatie p {
     font-size: 1.2em;
