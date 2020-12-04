@@ -326,9 +326,72 @@ body main .pie-charts h3 {
 
 .oorlog-illustratie {
     display: block;
-    height: 60vh;
+    position: relative;
+    height: 500px;
     margin: 7em auto;
+    width: 500px;
 }
+
+.oorlog-info {
+    color: white;
+    max-width: 300px;
+    text-align: center;
+    position: absolute;
+    display: block;
+    top: 0;
+    transform: translate(50%, -50%) rotate(15deg);
+    right: 0;
+}
+
+.oorlog-illustratie .pilaar {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.oorlog-illustratie .vrouw {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.oorlog-illustratie .hangendeMannen {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.oorlog-illustratie .manLinks {
+    position: absolute;
+    top: 320px;
+    left: 170px;
+}
+
+.oorlog-illustratie .manRechts {
+    position: absolute;
+    top: 320px;
+    right: 165px;
+}
+
+.oorlog-illustratie img:hover+div {
+    opacity: 1;
+}
+
+.info-block3 {
+    position: absolute;
+    max-width: 300px;
+    display: block;
+    transform: translateX(-100%);
+    left: 0;
+    top: 0;
+    color: white;
+    opacity: 0;
+}
+
 
 .slavernij-monument {
     background: #473D2B;
