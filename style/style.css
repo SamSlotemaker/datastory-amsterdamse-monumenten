@@ -37,7 +37,7 @@ h1 {
 h1 span {
     display: block;
     font-size: 1.7em;
-    color: rgb(125, 113, 238);
+    color: #EDB740;
     text-align: center;
     opacity: 0;
     animation: anim2 1s linear forwards .3s;
@@ -65,7 +65,6 @@ h3 {
     place-items: center;
     align-items: center;
     height: 100vh;
-    border-bottom: 1px solid white;
 
 }
 
@@ -171,14 +170,21 @@ h3 {
 
 /* PIE CHARTS */
 .pie-charts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 7em;
-    font-family: 'ddchardware';
+    margin-bottom: 20vh;
 }
 
-.pie-charts>div>div {
-    position: relative;
+.pie-charts h2 {
+    margin: auto;
+    font-size: 2em;
+
+    margin: 40vh auto 2em auto;
+
+}
+
+.pie-charts div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'ddchardware';
 }
 
 body main .pie-charts h3 {
@@ -188,7 +194,8 @@ body main .pie-charts h3 {
 }
 
 .pie-charts img {
-    height: 400px;
+
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -208,6 +215,10 @@ body main .pie-charts h3 {
 .oorlog-monument .pie-charts h3,
 .oorlog-monument .pie-charts p {
     color: #052934;
+}
+
+.slavernij-monument .pie-charts h3 {
+    color: #EDB740;
 }
 
 /* HOMO MONUMENT */
