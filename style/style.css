@@ -129,6 +129,7 @@ h3 {
 .introduction img {
     margin: auto;
     display: block;
+    width: 100%;
 }
 
 .information {
